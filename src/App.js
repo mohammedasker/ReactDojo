@@ -1,6 +1,10 @@
+import React, { useState } from "react";
 import "./App.css";
 
 function App() {
+	const [showButton, setShowButton] = useState(false);
+	const onClick = () => setShowButton(true);
+
 	return (
 		<div className="App">
 			<header>
@@ -18,9 +22,12 @@ function App() {
 				</div>
 			</header>
 			<h1>Join the Dojo and become the strongest coding warrior</h1>
-			<button>Start</button>
+			<button onClick={onClick}>Start</button>
+			{showButton ? <Text /> : null}
 		</div>
 	);
 }
+
+const Text = () => <div>IT'S WORKING!!!!</div>;
 
 export default App;
