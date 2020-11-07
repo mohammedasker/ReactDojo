@@ -58,17 +58,20 @@ const TextTwo = () => {
 };
 
 const TextThree = () => {
-	const [showText, setShowText] = useState(false);
-	const onClick = () => setShowText(true);
+	const [showYes, setShowYes] = useState(false);
+	const [showNo, setShowNo] = useState(false);
+	const onClickYes = () => setShowYes(true);
+	const onClickNo = () => setShowNo(true);
 
 	return (
 		<div>
 			<p>The training will be a living hell! Are you ready?</p>
 			<div className="choice">
-				<button onClick={onClick}>Yes</button>
-				<button onClick={onClick}>No</button>
+				<button onClick={onClickYes}>Yes</button>
+				<button onClick={onClickNo}>No</button>
 			</div>
-			{showText ? <TextFour /> : null}
+			{showNo ? <TextFour /> : null}
+			{showYes ? <TextFive /> : null}
 		</div>
 	);
 };
@@ -83,5 +86,28 @@ const TextFour = () => {
 		</div>
 	);
 };
+
+const TextFive = () => {
+	const retryButton = () => window.location.reload();
+
+	return (
+		<div>
+			<p>Good! Then, let's begin by going to the first stage.</p>
+			<button onClick={retryButton}>Go to Stage 1</button>
+		</div>
+	);
+};
+
+/**
+ * THINGS TO DO
+ *
+ * if I clicked yes button, show TextFive component
+ * else if I clicked no button, show TextFour component
+ * else, show nothing
+ *
+ * THINGS TO LEARN
+ * How to pass functions as props in React hooks
+ * How to conditionally render components i.e. show component 1 if button 1 is clicked and show component 2 if button 2 is clicked
+ */
 
 export default App;
