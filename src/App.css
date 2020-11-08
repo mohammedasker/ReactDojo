@@ -26,12 +26,12 @@ nav a h1 {
 	float: left;
 }
 
-nav ul {
+nav ul li {
 	text-decoration: none;
 	text-transform: none;
 	list-style: none;
 	float: right;
-	padding-top: 12px;
+	padding-bottom: 25px;
 }
 
 /* Global */
