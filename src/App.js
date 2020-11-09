@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Home from "./pages/Home/home";
 import About from "./pages/About/about";
+import Stage1 from "./pages/Stage1/Stage1";
+import Stage2 from "./pages/Stage2/Stage2";
 
 import "./App.css";
 
@@ -37,6 +39,12 @@ function App() {
 					</Route>
 					<Route path="/about">
 						<About />
+					</Route>
+					<Route path="/stage1">
+						<Stage1 />
+					</Route>
+					<Route path="/stage2">
+						<Stage2 />
 					</Route>
 				</Switch>
 			</Router>

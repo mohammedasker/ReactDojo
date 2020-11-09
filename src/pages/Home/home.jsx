@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./home.css";
 
 const Home = () => {
@@ -74,12 +75,12 @@ const TextFour = () => {
 };
 
 const TextFive = () => {
-	const retryButton = () => window.location.reload();
-
 	return (
 		<div>
 			<p>Good! Then, let's begin by going to the first stage.</p>
-			<button onClick={retryButton}>Go to Stage 1</button>
+			<Link to="/stage1">
+				<button>Go to Stage 1</button>
+			</Link>
 		</div>
 	);
 };
