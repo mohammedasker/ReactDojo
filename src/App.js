@@ -5,6 +5,7 @@ import Home from "./pages/Home/home";
 import About from "./pages/About/about";
 import Stage1 from "./pages/Stage1/Stage1";
 import Stage2 from "./pages/Stage2/Stage2";
+import Stage3 from "./pages/Stage3/Stage3";
 
 import "./App.css";
 
@@ -45,6 +46,9 @@ function App() {
 					</Route>
 					<Route path="/stage2">
 						<Stage2 />
+					</Route>
+					<Route path="/stage3">
+						<Stage3 />
 					</Route>
 				</Switch>
 			</Router>

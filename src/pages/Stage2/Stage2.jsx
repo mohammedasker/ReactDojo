@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 import "./Stage2.css";
 
 const Stage2 = () => {
@@ -42,7 +44,9 @@ const Stage2Clear = () => (
 			You did it! You defeated the Black Eyes Yellow Dragon and saved the
 			village! A new stage has unlocked. Come on, let's go!
 		</p>
-		<button>Go to stage 3</button>
+		<Link to="/stage3">
+			<button>Go to stage 3</button>
+		</Link>
 	</div>
 );
 
