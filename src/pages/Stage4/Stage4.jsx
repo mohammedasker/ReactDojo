@@ -65,7 +65,7 @@ const Stage4Clear = () => (
 			Y-You defeat me! You've learn so much in a short time. I have nothing to
 			teach you anymore. Congrats on passing the test, my apprentice! You are
 			now officially a coding warrior! Go to the treasure room and claim your
-			reward!!
+			reward!!!
 		</p>
 		<Link to="/reward">
 			<button>Treasure Room</button>
