@@ -39,29 +39,29 @@ const FindPotion = () => (
 	</div>
 );
 
-const Stage3Fail = () => (
-	<div>
-		<h1>Mission Failed!</h1>
-		<p> All you have to do is find that damn potion, apprentice!</p>
-		<button>Retry</button>
-	</div>
-);
+// const Stage3Fail = () => (
+// 	<div>
+// 		<h1>Mission Failed!</h1>
+// 		<p> All you have to do is find that damn potion, apprentice!</p>
+// 		<button>Retry</button>
+// 	</div>
+// );
 
-const Stage3Clear = () => (
-	<div>
-		<h1>Mission Passed!</h1>
-		<p>
-			The potion! You found it! Now I can cure the poison. Thank you so much!
-			<br />
-			<br />
-			We are about to enter the final stage of the training. I'll meet you
-			there.
-		</p>
-		<Link to="/stage4">
-			<button>Go to Final Stage</button>
-		</Link>
-	</div>
-);
+// const Stage3Clear = () => (
+// 	<div>
+// 		<h1>Mission Passed!</h1>
+// 		<p>
+// 			The potion! You found it! Now I can cure the poison. Thank you so much!
+// 			<br />
+// 			<br />
+// 			We are about to enter the final stage of the training. I'll meet you
+// 			there.
+// 		</p>
+// 		<Link to="/stage4">
+// 			<button>Go to Final Stage</button>
+// 		</Link>
+// 	</div>
+// );
 
 /**
  * 'Find the anti poison potion'
