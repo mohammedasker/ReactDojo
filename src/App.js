@@ -6,6 +6,8 @@ import About from "./pages/About/about";
 import Stage1 from "./pages/Stage1/Stage1";
 import Stage2 from "./pages/Stage2/Stage2";
 import Stage3 from "./pages/Stage3/Stage3";
+import Stage4 from "./pages/Stage4/Stage4";
+import Reward from "./pages/Reward/Reward";
 
 import "./App.css";
 
@@ -49,6 +51,12 @@ function App() {
 					</Route>
 					<Route path="/stage3">
 						<Stage3 />
+					</Route>
+					<Route path="/stage4">
+						<Stage4 />
+					</Route>
+					<Route path="/reward">
+						<Reward />
 					</Route>
 				</Switch>
 			</Router>

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 import "./Stage3.css";
 
 const Stage3 = () => {
@@ -55,7 +57,9 @@ const Stage3Clear = () => (
 			We are about to enter the final stage of the training. I'll meet you
 			there.
 		</p>
-		<button>Go to Final Stage</button>
+		<Link to="/stage4">
+			<button>Go to Final Stage</button>
+		</Link>
 	</div>
 );
 
